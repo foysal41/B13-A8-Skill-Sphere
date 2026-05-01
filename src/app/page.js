@@ -1,5 +1,10 @@
 import Image from "next/image";
+import Hero from "./components/homgepage/Hero";
 
 export default function Home() {
-  return <h2 className="text-red-500">Home Page</h2>;
+  return (
+    <div>
+      <Hero></Hero>
+    </div>
+  );
 }
