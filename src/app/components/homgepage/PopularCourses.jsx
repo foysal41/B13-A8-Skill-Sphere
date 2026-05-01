@@ -7,7 +7,7 @@ import { GrSteps } from "react-icons/gr";
 import Link from "next/link";
 
 const PopularCourses = () => {
-  console.log(courses);
+  
   return (
     <div className="container mx-auto  p-5">
       <div className=" ">
