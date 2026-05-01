@@ -2,7 +2,10 @@
   {
     "id": 1,
     "title": "Complete Web Development Bootcamp",
-    "instructor": "John Doe",
+    "instructor": {
+      "name": "John Doe",
+      "image": "https://randomuser.me/api/portraits/men/1.jpg"
+    },
     "duration": "20 hours",
     "rating": 4.8,
     "level": "Beginner",
@@ -13,7 +16,10 @@
   {
     "id": 2,
     "title": "UI/UX Design Masterclass",
-    "instructor": "Sarah Lee",
+    "instructor": {
+      "name": "Sarah Lee",
+      "image": "https://randomuser.me/api/portraits/women/2.jpg"
+    },
     "duration": "15 hours",
     "rating": 4.7,
     "level": "Beginner",
@@ -24,7 +30,10 @@
   {
     "id": 3,
     "title": "Digital Marketing Pro",
-    "instructor": "Michael Smith",
+    "instructor": {
+      "name": "Michael Smith",
+      "image": "https://randomuser.me/api/portraits/men/3.jpg"
+    },
     "duration": "18 hours",
     "rating": 4.6,
     "level": "Intermediate",
@@ -35,7 +44,10 @@
   {
     "id": 4,
     "title": "Python for Beginners",
-    "instructor": "David Warner",
+    "instructor": {
+      "name": "David Warner",
+      "image": "https://randomuser.me/api/portraits/men/4.jpg"
+    },
     "duration": "22 hours",
     "rating": 4.9,
     "level": "Beginner",
@@ -46,7 +58,10 @@
   {
     "id": 5,
     "title": "Advanced React & Next.js",
-    "instructor": "Alex Johnson",
+    "instructor": {
+      "name": "Alex Johnson",
+      "image": "https://randomuser.me/api/portraits/men/5.jpg"
+    },
     "duration": "25 hours",
     "rating": 4.8,
     "level": "Advanced",
@@ -57,7 +72,10 @@
   {
     "id": 6,
     "title": "Graphic Design Essentials",
-    "instructor": "Emma Watson",
+    "instructor": {
+      "name": "Emma Watson",
+      "image": "https://randomuser.me/api/portraits/women/6.jpg"
+    },
     "duration": "12 hours",
     "rating": 4.5,
     "level": "Beginner",
