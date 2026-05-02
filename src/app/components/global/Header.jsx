@@ -1,6 +1,7 @@
 import React from "react";
 import { MdCastForEducation } from "react-icons/md";
 import Navlink from "./Navlink";
+import Link from "next/link";
 
 const header = () => {
   return (
@@ -55,10 +56,18 @@ const header = () => {
           </ul>
         </div>
         <div className="navbar-end flex gap-3">
-          <a className="btn border border-[#4B4BF3] text-[#4B4BF3] rounded-md bg-white">
+          <Link
+            href={"/login"}
+            className="btn border border-[#4B4BF3] text-[#4B4BF3] rounded-md bg-white"
+          >
             Login
-          </a>
-          <a className="btn  text-white rounded-md bg-[#4B4BF3]">Register</a>
+          </Link>
+          <Link
+            href={"/register"}
+            className="btn  text-white rounded-md bg-[#4B4BF3]"
+          >
+            Register
+          </Link>
         </div>
 
         {/* <div className="flex flex-row items-center gap-4">
