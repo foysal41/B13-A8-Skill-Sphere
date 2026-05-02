@@ -7,7 +7,6 @@ import { GrSteps } from "react-icons/gr";
 import Link from "next/link";
 
 const PopularCourses = () => {
-  
   return (
     <div className="container mx-auto  p-5">
       <div className=" ">
@@ -77,7 +76,7 @@ const PopularCourses = () => {
                   </div>
 
                   {/* Row:4 Course CTA */}
-                  <Link href="" className="mt-4 block ">
+                  <Link href={`/courses/${course.id}`} className="mt-4 block ">
                     <button className="btn btn-outline btn-primary w-full text-primary hover:text-white">
                       View Details
                     </button>

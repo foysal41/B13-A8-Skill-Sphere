@@ -1,0 +1,310 @@
+[
+  {
+    "id": 1,
+    "title": "Complete Web Development Bootcamp",
+    "instructor": {
+      "name": "John Doe",
+      "image": "https://randomuser.me/api/portraits/men/1.jpg"
+    },
+    "duration": "42 hours",
+    "rating": 4.8,
+    "level": "Beginner",
+    "students": 12540,
+    "language": "English",
+    "lastUpdated": "May 2024",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "category": "Development",
+
+    "description": "Learn HTML, CSS, JavaScript, React, Node.js and more by building real-world projects.",
+
+    "about": {
+      "text": "This complete web development bootcamp is designed for absolute beginners who want to learn web development from scratch.",
+      "points": [
+        "Learn modern HTML, CSS, and JavaScript",
+        "Build responsive websites",
+        "Learn React.js and build SPAs",
+        "Learn Node.js, Express.js and MongoDB",
+        "Build and deploy real-world projects"
+      ]
+    },
+
+    "whatYouWillLearn": [
+      {
+        "title": "Frontend Development",
+        "description": "HTML, CSS, JavaScript, React"
+      },
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Express.js"
+      },
+      {
+        "title": "Database",
+        "description": "MongoDB, Mongoose"
+      },
+      {
+        "title": "Projects",
+        "description": "Build real-world projects"
+      },
+      {
+        "title": "Deployment",
+        "description": "Deploy apps to the cloud"
+      },
+      {
+        "title": "Best Practices",
+        "description": "Write clean and efficient code"
+      }
+    ],
+
+    "curriculum": [
+      { "title": "Introduction", "lectures": 3, "duration": "40 min" },
+      { "title": "HTML & CSS", "lectures": 8, "duration": "3h 20m" },
+      { "title": "JavaScript Basics", "lectures": 10, "duration": "6h" },
+      { "title": "React.js", "lectures": 12, "duration": "8h" },
+      { "title": "Node.js & Express", "lectures": 10, "duration": "6h" },
+      { "title": "MongoDB", "lectures": 6, "duration": "3h" }
+    ]
+  },
+
+  {
+    "id": 2,
+    "title": "UI/UX Design Masterclass",
+    "instructor": {
+      "name": "Sarah Lee",
+      "image": "https://randomuser.me/api/portraits/women/2.jpg"
+    },
+    "duration": "30 hours",
+    "rating": 4.7,
+    "level": "Beginner",
+    "students": 8400,
+    "language": "English",
+    "lastUpdated": "April 2024",
+    "image": "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c",
+    "category": "Design",
+
+    "description": "Master UI/UX design principles using Figma and real-world projects.",
+
+    "about": {
+      "text": "Learn how to design beautiful and user-friendly interfaces using modern tools.",
+      "points": [
+        "Understand design principles",
+        "Master Figma tools",
+        "Create wireframes",
+        "Build prototypes",
+        "Improve user experience"
+      ]
+    },
+
+    "whatYouWillLearn": [
+      {
+        "title": "Design Basics",
+        "description": "Color, typography, layout"
+      },
+      {
+        "title": "Figma",
+        "description": "Design and prototyping tools"
+      },
+      {
+        "title": "UX Research",
+        "description": "User behavior analysis"
+      },
+      {
+        "title": "Wireframing",
+        "description": "Create design structure"
+      },
+      {
+        "title": "Prototyping",
+        "description": "Interactive design flow"
+      },
+      {
+        "title": "Projects",
+        "description": "Real-world UI projects"
+      }
+    ],
+
+    "curriculum": [
+      { "title": "Design Basics", "lectures": 5, "duration": "2h" },
+      { "title": "Figma Tools", "lectures": 8, "duration": "4h" },
+      { "title": "UX Research", "lectures": 6, "duration": "3h" }
+    ]
+  },
+
+  {
+    "id": 3,
+    "title": "Digital Marketing Pro",
+    "instructor": {
+      "name": "Michael Smith",
+      "image": "https://randomuser.me/api/portraits/men/3.jpg"
+    },
+    "duration": "28 hours",
+    "rating": 4.6,
+    "level": "Intermediate",
+    "students": 6200,
+    "language": "English",
+    "lastUpdated": "March 2024",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+    "category": "Marketing",
+
+    "description": "Learn SEO, social media marketing, and ads.",
+
+    "about": {
+      "text": "This course helps you grow businesses online using marketing strategies.",
+      "points": [
+        "Learn SEO basics",
+        "Run social media campaigns",
+        "Create ads",
+        "Email marketing",
+        "Analyze performance"
+      ]
+    },
+
+    "whatYouWillLearn": [
+      { "title": "SEO", "description": "Search engine optimization" },
+      { "title": "Ads", "description": "Google & Facebook ads" },
+      { "title": "Social Media", "description": "Marketing strategies" },
+      { "title": "Email Marketing", "description": "Campaign building" },
+      { "title": "Analytics", "description": "Data tracking" },
+      { "title": "Strategy", "description": "Growth planning" }
+    ],
+
+    "curriculum": [
+      { "title": "Marketing Basics", "lectures": 4, "duration": "2h" },
+      { "title": "SEO", "lectures": 6, "duration": "3h" },
+      { "title": "Ads", "lectures": 5, "duration": "2h" }
+    ]
+  },
+
+  {
+    "id": 4,
+    "title": "Python for Beginners",
+    "instructor": {
+      "name": "David Warner",
+      "image": "https://randomuser.me/api/portraits/men/4.jpg"
+    },
+    "duration": "35 hours",
+    "rating": 4.9,
+    "level": "Beginner",
+    "students": 15000,
+    "language": "English",
+    "lastUpdated": "June 2024",
+    "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
+    "category": "Development",
+
+    "description": "Learn Python programming from scratch.",
+
+    "about": {
+      "text": "Start coding with Python and build real-world applications.",
+      "points": [
+        "Python basics",
+        "Functions",
+        "OOP",
+        "Problem solving",
+        "Projects"
+      ]
+    },
+
+    "whatYouWillLearn": [
+      { "title": "Python Basics", "description": "Syntax and data types" },
+      { "title": "Functions", "description": "Reusable code blocks" },
+      { "title": "OOP", "description": "Object-oriented programming" },
+      { "title": "Projects", "description": "Hands-on practice" },
+      { "title": "Debugging", "description": "Fix errors" },
+      { "title": "Logic Building", "description": "Problem solving skills" }
+    ],
+
+    "curriculum": [
+      { "title": "Basics", "lectures": 6, "duration": "3h" },
+      { "title": "Functions", "lectures": 5, "duration": "2h" },
+      { "title": "Projects", "lectures": 7, "duration": "4h" }
+    ]
+  },
+
+  {
+    "id": 5,
+    "title": "Advanced React & Next.js",
+    "instructor": {
+      "name": "Alex Johnson",
+      "image": "https://randomuser.me/api/portraits/men/5.jpg"
+    },
+    "duration": "40 hours",
+    "rating": 4.8,
+    "level": "Advanced",
+    "students": 9800,
+    "language": "English",
+    "lastUpdated": "July 2024",
+    "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee",
+    "category": "Development",
+
+    "description": "Build modern web apps using React & Next.js.",
+
+    "about": {
+      "text": "Learn advanced frontend concepts and build scalable applications.",
+      "points": [
+        "Next.js routing",
+        "SSR & SSG",
+        "Authentication",
+        "API integration",
+        "Deployment"
+      ]
+    },
+
+    "whatYouWillLearn": [
+      { "title": "React Advanced", "description": "Hooks & performance" },
+      { "title": "Next.js", "description": "Routing & SSR" },
+      { "title": "Auth", "description": "Login systems" },
+      { "title": "API", "description": "Data fetching" },
+      { "title": "Deployment", "description": "Production apps" },
+      { "title": "Optimization", "description": "Performance tuning" }
+    ],
+
+    "curriculum": [
+      { "title": "React Advanced", "lectures": 8, "duration": "4h" },
+      { "title": "Next.js", "lectures": 10, "duration": "6h" },
+      { "title": "Deployment", "lectures": 5, "duration": "3h" }
+    ]
+  },
+
+  {
+    "id": 6,
+    "title": "Graphic Design Essentials",
+    "instructor": {
+      "name": "Emma Watson",
+      "image": "https://randomuser.me/api/portraits/women/6.jpg"
+    },
+    "duration": "20 hours",
+    "rating": 4.5,
+    "level": "Beginner",
+    "students": 5400,
+    "language": "English",
+    "lastUpdated": "February 2024",
+    "image": "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70",
+    "category": "Design",
+
+    "description": "Learn graphic design fundamentals.",
+
+    "about": {
+      "text": "Master design tools and create professional visuals.",
+      "points": [
+        "Photoshop basics",
+        "Illustrator tools",
+        "Brand design",
+        "Poster design",
+        "Portfolio building"
+      ]
+    },
+
+    "whatYouWillLearn": [
+      { "title": "Photoshop", "description": "Image editing" },
+      { "title": "Illustrator", "description": "Vector design" },
+      { "title": "Branding", "description": "Logo & identity" },
+      { "title": "Layout", "description": "Design structure" },
+      { "title": "Color Theory", "description": "Visual balance" },
+      { "title": "Portfolio", "description": "Showcase work" }
+    ],
+
+    "curriculum": [
+      { "title": "Design Basics", "lectures": 5, "duration": "2h" },
+      { "title": "Photoshop", "lectures": 6, "duration": "3h" },
+      { "title": "Illustrator", "lectures": 6, "duration": "3h" }
+    ]
+  }
+]
