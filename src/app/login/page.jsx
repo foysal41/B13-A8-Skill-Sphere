@@ -4,6 +4,7 @@ import React from "react";
 import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
 import { authClient } from "../lib/auth-client";
+import { FaGoogle } from "react-icons/fa6";
 
 const LoginPage = () => {
   const router = useRouter();
@@ -18,7 +19,7 @@ const LoginPage = () => {
     const { data, error } = await authClient.signIn.email({
       email: email, // required
       password: password, // required
-      callbackURL: "/course",
+      callbackURL: "/courses",
     });
 
     console.log(data, error);
@@ -29,9 +30,17 @@ const LoginPage = () => {
     if (data) {
       toast.success("Register Successful");
       setTimeout(() => {
-        router.push("/course");
+        router.push("/courses");
       }, 1500);
     }
+  };
+
+  const handleGoogleSignIn = async () => {
+    const data = await authClient.signIn.social({
+      provider: "google",
+    });
+
+    
   };
   return (
     <div className="container mx-auto p-5 justify-center items-center">
@@ -62,6 +71,14 @@ const LoginPage = () => {
         <p>
           login your account <Link href={"/register"}>Click here</Link>
         </p>
+
+        <button
+          onClick={handleGoogleSignIn}
+          className=" border border-red-500 px-4 py-2 flex gap-2 items-center cursor-pointer"
+        >
+          <FaGoogle />
+          <p>Login with google</p>
+        </button>
       </div>
     </div>
   );

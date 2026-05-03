@@ -1,9 +1,14 @@
+"use client";
+
 import React from "react";
 import { MdCastForEducation } from "react-icons/md";
 import Navlink from "./Navlink";
 import Link from "next/link";
+import { authClient } from "@/app/lib/auth-client";
 
 const header = () => {
+  const { data: session, isPending } = authClient.useSession();
+  const user = session?.user;
   return (
     <div className="container mx-auto my-4">
       <div className="navbar bg-base-100 shadow-sm rounded-md">
@@ -55,20 +60,6 @@ const header = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end flex gap-3">
-          <Link
-            href={"/login"}
-            className="btn border border-[#4B4BF3] text-[#4B4BF3] rounded-md bg-white"
-          >
-            Login
-          </Link>
-          <Link
-            href={"/register"}
-            className="btn  text-white rounded-md bg-[#4B4BF3]"
-          >
-            Register
-          </Link>
-        </div>
 
         {/* <div className="flex flex-row items-center gap-4">
           <img src="" alt="" />
@@ -77,6 +68,39 @@ const header = () => {
             Login
           </a>
         </div> */}
+
+        <div className="navbar-end flex gap-3">
+          {isPending ? (
+            <span className="loading loading-ring loading-xl"></span>
+          ) : user ? (
+            <div className="flex items-center gap-4">
+              <h4>Hi, {user.name}</h4>
+
+              <button
+                onClick={async () => await authClient.signOut()}
+                className="btn border border-red-500 text-red-500 rounded-md bg-white"
+              >
+                Logout
+              </button>
+            </div>
+          ) : (
+            <div className="flex flex-row gap-3">
+              <Link
+                href="/login"
+                className="btn border border-[#4B4BF3] text-[#4B4BF3] rounded-md bg-white"
+              >
+                Login
+              </Link>
+
+              <Link
+                href="/register"
+                className="btn text-white rounded-md bg-[#4B4BF3]"
+              >
+                Register
+              </Link>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
