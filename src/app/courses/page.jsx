@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import courses from "@/../public/courses.json";
 import Image from "next/image";
@@ -5,18 +6,34 @@ import { FaStar } from "react-icons/fa";
 import { IoMdTime } from "react-icons/io";
 import { GrSteps } from "react-icons/gr";
 import Link from "next/link";
+import { useState } from "react";
 
 const CourseArchivePage = () => {
+  const [search, setSearch] = useState("");
+
+  const filteredCourses = courses.filter((course) =>
+    course.title.toLowerCase().includes(search.toLowerCase()),
+  );
+
   return (
     <div className="container mx-auto  p-5">
       <div className=" ">
         {/* header */}
-        <h2 className="text-2xl font-bold ">All Courses</h2>
+        <div className="flex items-center justify-between ">
+          <h2 className="text-2xl font-bold ">All Courses</h2>
+          <input
+            type="text"
+            placeholder="Search courses..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            className="border border-purple-500 focus:outline-none focus:ring-2 focus:ring-indigo-500  p-2 rounded-md w-full md:w-1/3"
+          />
+        </div>
 
         {/* courses */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  mt-6 items-center gap-4 relative">
           {/* Course item one */}
-          {courses.map((course, idx) => (
+          {filteredCourses.map((course, idx) => (
             <div className="relative" key={idx}>
               <Image
                 src={course.image}

@@ -74,7 +74,9 @@ const header = () => {
             <span className="loading loading-ring loading-xl"></span>
           ) : user ? (
             <div className="flex items-center gap-4">
-              <h4>Hi, {user.name}</h4>
+              <h4>Hi, {user.name} | </h4>
+
+              <Link href="/profile">Edit Profile</Link>
 
               <button
                 onClick={async () => await authClient.signOut()}
