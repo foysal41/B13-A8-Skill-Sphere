@@ -6,6 +6,7 @@ import dns from "node:dns/promises";
 dns.setServers(["1.1.1.1", "8.8.8.8"]);
 
 const client = new MongoClient(process.env.MONGO_URI);
+await client.connect();
 const db = client.db();
 export const auth = betterAuth({
   database: mongodbAdapter(db, {
@@ -18,9 +19,9 @@ export const auth = betterAuth({
   },
 
   socialProviders: {
-        google: { 
-            clientId: process.env.GOOGLE_CLIENT_ID , 
-            clientSecret: process.env.GOOGLE_CLIENT_SECRET, 
-        }, 
+    google: {
+      clientId: process.env.GOOGLE_CLIENT_ID,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     },
+  },
 });
