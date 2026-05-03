@@ -1,16 +1,19 @@
 "use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { authClient } from "../lib/auth-client";
 import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
+import { ClipLoader } from "react-spinners";
 
 const RegisterPage = () => {
+  const [loading, setLoading] = useState(false);
   const router = useRouter();
   const handleRegisterFunc = async (e) => {
     e.preventDefault();
     // const formData = new FormData(e.currentTarget);
     // const data = Object.fromEntries(formData.entries());
+    setLoading(true);
     const name = e.target.name.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
@@ -24,12 +27,14 @@ const RegisterPage = () => {
 
     if (error) {
       toast.error("You have have already have account please login");
+      setLoading(false);
     }
     if (data) {
       toast.success("Register Successful");
       setTimeout(() => {
         router.push("/login");
       }, 1500);
+      setLoading(false);
     }
   };
   return (
@@ -66,7 +71,21 @@ const RegisterPage = () => {
               className="w-full border rounded-md p-2 focus:outline-none  focus:ring-2 focus:ring-indigo-500 "
             />
           </div>
-          <button className="btn">Register</button>
+          {}
+          <button className="btn">
+            {loading ? (
+              <div>
+                {" "}
+                <>
+                  {/* ✅ react spinner */}
+                  <ClipLoader size={18} color="#ffffff" />
+                  Registering...
+                </>
+              </div>
+            ) : (
+              "Register"
+            )}
+          </button>
         </form>
         <p>
           login your account <Link href={"/login"}>Click here</Link>
